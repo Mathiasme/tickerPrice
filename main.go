@@ -19,7 +19,7 @@ func main() {
       panic(err)
     }
     tickerWithoutNewLine := strings.TrimSuffix(ticker, "\n")
-    fmt.Println(GetTickerPrice(tickerWithoutNewLine), "$")
+    fmt.Println(GetTickerPrice(tickerWithoutNewLine))
     time.Sleep(5 * time.Second)
 }
 
