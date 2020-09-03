@@ -8,7 +8,9 @@ import (
     "strconv"
     "strings"
     "log"
+    "time"
 )
+
 func main() {
     reader := bufio.NewReader(os.Stdin)
     fmt.Print("Enter Ticker : ")
@@ -17,9 +19,9 @@ func main() {
       panic(err)
     }
     tickerWithoutNewLine := strings.TrimSuffix(ticker, "\n")
-    fmt.Println(GetTickerPrice(tickerWithoutNewLine))
+    fmt.Println(GetTickerPrice(tickerWithoutNewLine), "$")
+    time.Sleep(5 * time.Second)
 }
-////span[@class='Trsdu(0.3s) Fw(b) Fz(36px) Mb(-4px) D(ib)']
 
 func GetTickerPrice(ticker string) float64 {
   doc, err := htmlquery.LoadURL("https://finance.yahoo.com/quote/" + ticker)
