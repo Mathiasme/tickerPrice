@@ -9,7 +9,4 @@ Ubuntu binary available here : https://www.delaborde.org/works/TickerPriceUbuntu
 
 MacOS binary available here : https://www.delaborde.org/works/TickerPriceMacOS
 
-Windows binary available here : https://www.delaborde.org/works/TickerPriceWindows.exe
-
-
 @Mathiasdlb
